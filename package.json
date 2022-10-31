@@ -1,0 +1,39 @@
+{
+  "name": "open-communication",
+  "version": "0.1.0",
+  "private": true,
+  "description": "P2P Communication Service",
+  "author": "Bahman Timas",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BahmanTimas/OpenCommunication.git"
+  },
+  "keywords": [
+    "peer",
+    "peerjs",
+    "peerjs-server",
+    "p2p",
+    "rtc",
+    "webrtc",
+    "chat",
+    "video-call"
+  ],
+  "source": "pages/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf dist && parcel build",
+    "watch": "rm -rf dist && parcel watch",
+    "server": "node server.js",
+    "dev": "export NODE_ENV=development && npm run watch & npm run server",
+    "start": "export NODE_ENV=production && npm run build && npm run server"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "peer": "^0.6.1",
+    "peerjs": "^1.4.7"
+  },
+  "devDependencies": {
+    "parcel": "^2.7.0"
+  }
+}
